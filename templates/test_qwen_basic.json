@@ -1,0 +1,29 @@
+{
+  "1": {
+    "class_type": "WanTextToImageApi",
+    "inputs": {
+      "model": "wan2.5-t2i-preview",
+      "prompt": "a beautiful sunset over the ocean, golden light, peaceful, professional photography",
+      "negative_prompt": "ugly, blurry, low quality, distorted, watermark",
+      "width": 1024,
+      "height": 1024,
+      "seed": 123456
+    },
+    "_meta": {
+      "title": "[Generation] Wan Text-to-Image API - Generate image using Qwen model | Supports Chinese prompts, recommended 1024x1024"
+    }
+  },
+  "2": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "filename_prefix": "wan_test_output"
+    },
+    "_meta": {
+      "title": "[Output] Save Image - Save generated image to disk"
+    }
+  }
+}
